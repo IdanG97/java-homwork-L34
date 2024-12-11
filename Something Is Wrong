@@ -1,0 +1,21 @@
+public class SomethingIsWrong1 {
+    //  המחלקה Rectangle אינה מוגדרת
+
+    static class Rectangle {
+        int width;
+        int height;
+
+        int area() {
+            return width * height;
+        }
+    }
+
+    public static class SomethingIsWrong {
+        public static void main(String[] args) {
+            Homework.SomethingIsWrong1.Rectangle myRect = new Homework.SomethingIsWrong1.Rectangle();
+            myRect.width = 40;
+            myRect.height = 50;
+            System.out.println("myRect's area is " + myRect.area());
+        }
+    }
+}
