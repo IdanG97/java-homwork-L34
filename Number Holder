@@ -1,0 +1,26 @@
+public class NumberHolder {
+    public int intNumber;
+    public float floatNumber;
+
+    public NumberHolder() {
+        intNumber = 0;
+        floatNumber = 0;
+    }
+
+    public NumberHolder(int intNumber) {
+        this.intNumber = intNumber;
+        this.floatNumber = 1;
+    }
+
+    public void print() {
+        System.out.println("intNumber: " + intNumber + ", floatNumber: " + floatNumber);
+    }
+
+    public static void main(String[] args) {
+        NumberHolder nh1 = new NumberHolder();
+        nh1.print();
+
+        NumberHolder nh2 = new NumberHolder(7);
+        nh2.print();
+    }
+}
